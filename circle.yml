@@ -1,0 +1,14 @@
+machine:
+    timezone:
+        America/Los_Angeles
+    python:
+        version: 2.7.10
+
+dependencies:
+  pre:
+    - pip install pytest
+
+test:
+  override:
+    - py.test -v
+
